@@ -1,0 +1,453 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+     <img src= "data:image/png;base64,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" 
+     alt="v" width="50px" height="50px" >
+        Women Safety </a>
+        <a routerLink="/selfdefence" class="navbar-brand">Self Defence</a>
+        <a routerLink="/womensafetyinfo" class="navbar-brand">Saftey Guide</a>
+        <a routerLink="/login" class="navbar-brand">Logout</a>
+    </div>
+  </nav>
+
+
+ <audio  #audio>
+   <source src="C:\Users\Dell\Desktop\WomenSafteyApp\src\assets\Dog-barking-sound.mp3" type="audio/mp3" >
+ </audio> 
+<div class="text-center">
+ <a (click)="OnPlay()"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Italian_traffic_signs_-_SOS.svg/1024px-Italian_traffic_signs_-_SOS.svg.png" alt="" width="200px" height="200px"></a>
+ <a (click)="OnPlay()" class="m-3"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Italian_traffic_signs_-_SOS.svg/1024px-Italian_traffic_signs_-_SOS.svg.png" alt="" width="200px" height="200px"></a>
+ <a (click)="OnPlay()" class="m-3"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Italian_traffic_signs_-_SOS.svg/1024px-Italian_traffic_signs_-_SOS.svg.png" alt="" width="200px" height="200px"></a>
+
+</div>
+
+<!-- the options -->
+<div class="container">
+    <div class="row row-cols-12">
+      <div class="col ">
+
+        <button type="button" 
+        class="btn "
+        data-bs-toggle="modal" 
+        data-bs-target="#staticBackdrop">
+        <img src="https://cdn3.iconfinder.com/data/icons/medical-3-11/64/206-512.png" alt="" 
+         width= "80px" height=" 80px">
+        </button>
+        <h4>Emergency <br> Numbers</h4>
+      </div>
+      
+      <div class="col"> <button type="button" class="btn " data-bs-toggle="modal" 
+        data-bs-target="#staticBackdrop1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Maps_icon.svg/1200px-Google_Maps_icon.svg.png" alt="" 
+        width= "80px" height="80px"
+        >
+         </button>
+        <h4>Nearby police<br> stations</h4>
+        </div>
+      <div class="col">
+
+        <button type="button"
+         class="btn" data-bs-toggle="modal" 
+         data-bs-target="#staticBackdrop2" (click)="MessageFamily()">
+            <img src="https://png.pngtree.com/png-vector/20190115/ourlarge/pngtree-vector-message-icon-png-image_318159.jpg" alt="" 
+            width= "100px" height="100px"
+            >
+             </button>
+         <h4>Message<br> Family</h4>
+      </div>
+      <div class="col">
+
+        <button type="button" class="btn "
+         data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop4"
+          (click)="bookOla()"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEX////7+/sAAADv7+/V1dXY2Njq6uoyMjKzvyPb29sYGBjf39/IyMjy8vLNzc1vb2+ZmZl9fX38/9/M2yjm5uZ0dHTBwcEpKSkUFBRGRka3xCQKCgovLy9yehZZWVkjIyM+Pj4dHR2kpKS1tbVPT0+Kior//+dkZGS5ubmNlxuFhYVTU1M3Nzerq6t6enqfn59VWxCMjnzDxq05PQufqx++zCWptSErLgjI1id9hhiRmhxkZVm4uqOZm4dub2E6OzPg4sZ/gHBWV0yUlYNmbBRCRg0aGwUSEwMfIgYxNQlMUg9bYhLb6K/IAAANPklEQVR4nO2ca2PauBKGQbZxjGwDibFNoNypKYHQ3U3bbbd7Pe3Zc87+//9zZiT5xi3UNqEf5v2UBOrRoxmNRpLVWo1EIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSN+l6k7DsP3ZdtF57HZb0fDh4aE3avbZZDCetx4X06Xu1K/dxkJqGP52EY2DPjtD69bUda7d4nNV9/xtt3cO1p66s8a1W/+MrFk7Guw3PDTnEYTjdjvdbDaz5dK3XSl/udm2V615mH43eLSvTXFcjXGOa9CLOjDIfJ1zbqGMVLqU+Bk+4YY/WwxHiSv973Nc1hM3RJ3tzNUtLqn0cwSg3LDbUezNSL82zgH5jI0e2zPf4Ah2FtcBTH+hImGw+e4caUOr+Ak2I45JdG36hx0vwxfshcpTK+3aTHktoU3ujktQHGXptr9cbqbtxWrVjYY+t7jr20quboixqljRk4+SsfNdMWKnWymfZSzbK5jgo/k6SSGJto5j5P/SH0cQ4m7sXsvYSkd2v5/5YwvD0Mr4b7HH1TR7w2HU7bTnSOgfmhBZ0JrqXDzG4P5Qxur3Mh6hLdNkRPEptm3YWS3aW5gBfVvnMlhF2HYlYc9Tf9RdKOqmi86D7JTxwuVGlnFzbTahDWMTHgeoF4FD2zpPJsFcyrFaknDMMy7HQcsNdyNT6XBjWYJxOcdfR99DFRAw1sZG8UbDqUOzHg1LP6KE8MA3IMu4bYRsLnTJuBFFUs+4NqALrcAWeo6m1VsQWHy35VbCExP2nIYHgbo3vRiWTKUdVzBabVkDeNclhLDsWgoQWrTEIeZ5XgOkaZrjOJrT2COsayhHa3jc2mHU2wEmGeFHS+8IxsdrTh0ONMA3BKBjgQdl2/M6Rhh/7OUoLWuzhocuxOxhuS2ZVq+3wILUCXmDA6BWH7KHQ4DPEaIzvWxsG9YU/DiYib/FaXVxrakDssHWMEQzoXgTpN9OKORlhqXBt7B8HroqrcoSoH0VRkvkGRxxWj1i3YMuPJMQvpctjHTMOVsueWfjq/lxAanO8oQLvWMuPJsQclLGj9wHrAdX1nJcjE1gfPGcA0Znlmzd9GjDzybEWM0OR+i/vhyN8ItifOFyFSbDpiViFPPM9LALv4lQ0zI5x/JNcBuPx+ZGjsfoJWsAGCuPnmoZY0YlhE7OjTDdPuhG/NtMMvaWL0YI1pYSy3FZqDUOy9sjdI58c+f7OBph5TJwk+0dvozkkqv9MhMkzA+juOen7OFoPbpLeKguPfpvcH29TP6BwW1ZA7zMhk4XRomKTGfFOucT8ue+mZHhDjCdpb9b+qIpl5TTizuSpWMPEw0/KrlHk6wPx/EfzhLnw52C3rKmakNn6F8UEBbr4zi51EcsMPe0Xo/HvV5v/gBL/ChqPY4l4WjV+SatoMDZNHKO5X5HbQ5Em8vNkTAg2jGhE4XhOecUR3cxnpXj5Cp0WJVNH9RH4+mFIFm2ihE/iEwoxWFt4Lq27/vL5XIG2mym222ba47Betv2N8vG1UuD5x1pLwJ2wXDFID0+sTmHJSa8I5+dlnqul1s3W9xuy7UHC6vf1Ikw5k5M3ZdS3pHgST0O16oZ2dFS++LydnYGuLsS5x4jt0pAmInnp6qvvDDO6ieVDcVvh7SsttiRbFW4wILwP1Zq58lOgx1mPafPko2B+AxBbFyFVlWAuEHTeK4R3wyX4zwDs8ENQ992WngMO9OtbpWjESri4ekgLcV3NqVjpdPwIBJ5tV0NITzJP2m/AkBJeZqwPtwvDhZVAM4YW5+2XRHgc4xI+Mvnz7/++dvvKeK0AkKs9/csi4JGbgVXCHgaEpZtjN2+Fvrj85+qxil/3OFC0spbbeQWE16jWsITjM4a5sFbKaT8U1axZQmjTNG9hyfVcGovwihOXEe3r29jyttfsU4tCajBM7yTfMKRL8MoFiv9PxLE29d/lI9TmCqiZKqIjztxLeHiK0HicF4yVktYOzw9yfVYFvEHxoJyhFAg2U4OULdzctXRL6/QjY7a6TqAqCPiryniLc5lZQAh8idJxCR8rnwHA1Y3rvhVvouhVYSY2Z47gIinC+yvZDC+hqH4UIbwEY9JUkLkc4343BDPPrmBkK7MOJUgxjuV3NMODUenIRZQ/0oY4ZcS636ONXwjtsMt6S8v7VvocHyPxrbFgKxg4ogdaFlynt1ndOrywBgYEfL1b6XqU1M8a6uKRliQIl/OGuQEYAQ/6pV4UTnQc9PO2ndjnct18C+fcVr8sUyYQubqP/0Eda6v+hKCM29LysPwFZFassBRgJZbz3TVITcu5eEN+/2HH4GQBUXjFB7z6v7+DZT0ET+YvlUbajKAEbEKQF3f+fshRn+ercD7xSobTFv3Nzf3N1+wij+wvkkXFU6M6JWIUzUGdXfvGYcyTt2bmilirxDhgrEvQAiM77/CrLHMGhK82TYgol4uTlWI2vufwDJ8bzug7uEq+Mvbr/8uXoFD9f50I3X/BM+ZG3XluYZnQMaBr6Rt0HAsWmXiVMYo93fSFVrR/eVsqWdnD0eD/mdv398LvWJsVQDQYezvm5jw7u4jw1dBnHpj2pJn7c3ewncSyJrHXRGnRacMFaO2ngOEyngaj7j+cKapE776BpLD16d71bpPjHULEEKB9FU94ubd3d3du7e44ozyi+wWTxrEeSknqkFo53YManzH3gJmZ6duw6L1P093P8f9/6YY4SYehorw7u79hzR5JXsmqzizOxCn6MSCmxoyRnMurNVWibnE4LSOJ1TsDbSnLOEW54oc4ZOw0g/DplB8QGPJRkGcCicW3MoXhK6dyVQ1bSDtNZU9aRDHyKufRYNKEsJQ/pgjfJOzl4G0JaIGIxHT6cmD7ZPidmamqHkH7Iku/So7/O7uvlpCTDUsZy+xqUILZ4xShK6dDmux+N63J7r0XhG+K0fYzhM+YYfu2osRRYavqVzjFQX07EyQYkW1D6jsvauEcJoZh/d37xLAiRp/Ca4oKUSykGFamNCw09leJBkBOGkqe+EkQfxJEv4sp8Ois8Usk0tv7r7iDAgKMm+vh6NJqExuamIgimxamNBNM6koGeHh4STI3JiajGJETKVPHz++kvqnGKENNUPiw0/CYDgyxcsRvagrL/cEQSjHRlirq9LNMqzjLzKclp0OQzwOwiAJ5LZo1GqJeT8cYJ+iaZX4EhUhhF78KSH8gAbDYI0PX4m1oCfeQA9MFad+TaWaUooJhQshQE0EHM/kBhjWaf31KBT2PlZAiNe4si5sNgfrCXSjz9XlH45DZWBORKcOsW04kqoh7GCPjkycEB+5ug3AbTDfXEPYgL0Pd3efykZpDXz0Rjrx/i0aDIRBN72C5wFiuEZE+LucEo30qlMBWUmewYicmCagdL30Yz3EqAFENWOUzDSYTD8oQpFWhMENz7SI99CiKQiNmiy0SikGxE3Dpok9ambtWTO8y2niDWP2VH62EOdqckbEuRB6FFac66xBA19Fg4YEaHFT4bY31sR96DqIyk321qbB5zguzEkfB2JK+LHoUSI4keEKBfsIDQb4DmgurHjI+kA+Auc+Vkm4Er4yASQHaFh49Qp8Cx98yVRtbwvvt/UkIq4w0eAI3x3ME8LiBj4YAGFUJWFLRD/EzDzfo5Ytg2mSI3zPCu+Z4hE+ZBskVM/1dwhbImqQfVwlYRQTDg8TQjS9TdcW/y1xAiXK+/+9fyVi47gP0WLvIj58OEr4RRBCIhWr1uL3iRqiSPtbPhd+nu4QjhPCqLCNA2rLLu2zwQ7hLOnrfyA6Pz19eoM7D+UOZ9QyG8fhADdOcxZ1+QFaHHRblak7FzkaS0Q7n0u7clQ0c/VMOUCIVPF+J6ZMzG05i7wju9QMWeXqy9Bo8Z0eZXv2huWvvDn+qrVWrsomN8tXBgfzw60so1B16SxjEIe96FGzO5SKVpuqrvS1R8piKy4ToU7sK4N9zXKr1kSNbxbXwVAIP6pYCorsjj6nRtOUI5HNbS7fLpsyOVrMoFjJdFor8a41TFCsLV8f5y7usQ1Ej/ILGKytRnGnsmi79GeLdRxKZngJg5pwosgpg9XM97di5zS4WI9CUTwQ3TfIvuMtGzGp5N2rPU3l07M34vuyCaMLveyt9+Vr+aOYMRT2zGB+GXu1obwTMIinhr5MMmbZyeG4ZgrRHASjySi+khCYF7sr2EtsoL2B+iWs4l22I5r1YyupRuPLXYKo90Z79gb9CwJCoA52TA7C1iXt1Tq7fRpc+n8mqK+aQWpzMFlf9q5OrWb3mhnGIOxc/iZbYxGEo1EQwNDoP8wubq5W84f9CdoLRs3J6oX+SwJj1l51Fls/ucW6s/YpdPaU0c5Kqqb520Vn1d680I3SLIg8cC66w322tH3+i/I56UsDRZor70oVAlWvSEjKyzHmaPfDMve6RBECLQOyG7QvQUUikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEgn0f/sheSMszzSHAAAAAElFTkSuQmCC" alt="" 
+            width= "100px" height="100px"
+            >
+            <h4>Book OLA Immediately</h4>
+        </button>
+
+      </div>
+
+      <div class="col ">
+
+        
+           <div *ngIf="recording; else stop">
+            <button type="button" class="btn "
+              (click)="start()"
+              >
+              <img src="data:image/png;base64,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" alt="" 
+              width= "100px" height="100px"
+              >
+            </button>
+             <h4>Start Recording</h4>
+           </div>
+           
+           <ng-template #stop>
+            <button type="button" class="btn " 
+            data-bs-toggle="modal"
+            
+            data-bs-target="#staticBackdrop3">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDHmM4bHWuFcK7CqtEFZCMENgq04wnIsPzg&usqp=CAU" alt="" 
+              width= "100px" height="100px"
+              >
+            </button>
+             <h4>Stop Recording</h4>
+           </ng-template>
+           
+
+      
+
+      </div>
+
+      <div class="col">
+
+        <button type="button" class="btn "
+         data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop5"
+         (click)="Moves()"
+          >
+            <img src="data:image/png;base64,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" alt="" 
+            width= "100px" height="100px"
+            >
+            <h4>Emergency Moves</h4>
+        </button>
+
+      </div>
+
+      <div class="col">
+
+        <button type="button" class="btn "
+         data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop6"
+         (click)="capture()"
+          >
+            <img src="https://icons-for-free.com/iconfiles/png/512/capture+device+photo+play+icon-1320166363978203980.png" alt="" 
+            width= "100px" height="100px"
+            >
+            <h4>Capture Image</h4>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Modal for emergency numbers -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Emergency Numbers </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+           
+            <a  href="tel:102">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/ambulance-2269639-1894250.png"
+                alt="ss" width="50px" height="50px">
+                <h4>Call Ambulance</h4></a>
+
+            
+            <a  href="tel:1091">
+                <img src="https://thumbs.dreamstime.com/z/female-operation-call-center-helpline-service-flat-icon-vector-128228398.jpg"
+            alt="ss" width="50px" height="50px">
+                <h4>Women Helpline</h4></a>
+
+           
+            <a  href="tel:011-26942369">
+                <img src="https://images.indianexpress.com/2017/08/ncw-759.jpg"
+                alt="ss" width="50px" height="50px">
+                <h4>NCW</h4></a>
+         
+           
+            <a  href="tel:112">
+                <img src="https://cdn0.iconfinder.com/data/icons/medical-218/66/12-512.png"
+                alt="ss" width="50px" height="50px">
+                <h4>Emergency Helpline</h4></a>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal for Nearby Police Station-->
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Nearby Police Station </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center"  >
+           <div *ngFor="let item of nearbyPlaces">
+              
+            
+          
+                <img src="{{item.icon}}"
+                alt="ss" width="50px" height="50px">
+            <h4>{{item.title}}</h4>
+        </div>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal for sending messages -->
+   <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Message Sent </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center"  >
+          <h4>Message Sent!!! Please Take Care Someone will Reach out to you soon</h4>
+          <h3>Try These Moves For Your Saftey</h3>
+          
+
+          <img src="https://wl-brightside.cf.tsp.li/resize/728x/jpg/acb/66c/ae5f5257f59ad3c8c9128c090e.jpg"
+           alt=""
+           width="300px"
+           height="300px"
+           >
+
+           <img src="https://wl-brightside.cf.tsp.li/resize/728x/jpg/281/b35/e854955ce890f62bd90d9badea.jpg"
+           alt=""
+           width="300px"
+           height="300px"
+           >
+
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRencJpsb1UoFz9jk4etf1GO_QDOhC7QmQpaQ&usqp=CAU"
+           alt=""
+           width="300px"
+           height="300px"
+           >
+
+           <img src="https://antvt.com/wp-content/uploads/2020/04/sd.jpg"
+           alt=""
+           width="300px"
+           height="200px"
+           >
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Modal for voice recording -->
+   <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Recording </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center"  >
+          <div class="alert alert-danger" role="alert" *ngIf="alert">
+           The PassWord is Incorrect. Please Enter the Correct Password
+          </div>
+          <div class="alert alert-success" role="alert" *ngIf="success">
+            Password Sucessfull. You Can Stop the recording 
+          </div>
+          <form action="" (ngSubmit)="onSubmit(form)" #form="ngForm">
+          <label for="">Enter Your Secret Key</label>
+          <input type="password" [(ngModel)]="secretKey" class="form-control" #input>
+          <button class="btn btn-danger m-3 text-left" type="submit" [disabled]="disable">Submit</button>
+            <div *ngIf="successstop">
+             <h4>Audio URL: <a href="{{blobUrl}}">{{blobUrl}}</a> sent to registered contact. 
+              Be safe, somebody will reach out to you soon!!! 
+            </h4>
+            </div>
+        </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" 
+          data-bs-dismiss="modal"
+          (click)="stopAudio()"
+          [disabled]="disablestop"
+          >Stop</button>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal for ola booking-->
+   <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">OLA Booked </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center"  >
+           Your OLA has been Booked.
+           Be Safe Reaching out to you in {{time}} mins
+           <h4>Car Driver Number: {{driverNumber}}</h4>
+           <h4>Car Driver Name: {{driverName}}</h4>
+           <h4> OTP for the driver: {{otp}} </h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal for Suggestions -->
+  <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">TALK OR TYPE TO BE SAFE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center"  >
+
+          <div *ngIf="voiceActiveSectionDisabled; else voicesection;">
+            <button type="button" class="btn btn-info" (click)="startVoiceRecognition()">Record</button>
+          </div>
+          <ng-template #voicesection>
+            <ng-container *ngIf="!voiceActiveSectionError; else failure">
+              <ng-container *ngIf="voiceText; else start">
+                  <span>{{voiceText}}</span>
+              </ng-container>
+              <ng-template #start>
+                <ng-container
+                  *ngIf="voiceActiveSectionListening; else beginning">
+                  <span>Listening...</span>
+                </ng-container>
+                <ng-template #beginning>
+                  <span>Start talking...</span>
+                </ng-template>
+              </ng-template>
+            </ng-container>
+            <ng-template #failure>
+              <span>Didn't catch that</span>
+            </ng-template>
+            <div>
+              <button class="btn btn-info m-3" (click)="closeVoiceRecognition()">Close</button>
+              <button  class= "btn btn-info m-3"(click)="startVoiceRecognition()">Restart</button>
+            </div>
+          </ng-template>
+
+          <h4>Please Select the situation</h4>
+          <select class="form-control" #select (change) ="selected()">
+            <option disabled>Select your option</option>
+            <option >Emergency Attack</option>
+            <option>Robbery</option>
+            <option>Murderer</option>
+            
+            <option>Location Saftey</option>
+          </select>
+
+              <div *ngIf="emergency" class="m-3">
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/M4_8PoRQP8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/-V4vEyhWDZ0?start=120" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/M4_8PoRQP8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div *ngIf="robber" class="m-3">
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/k9Jn0eP-ZVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/-V4vEyhWDZ0?start=120" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/M4_8PoRQP8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div *ngIf="murder" class="m-3">
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/M4_8PoRQP8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/-V4vEyhWDZ0?start=120" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/M4_8PoRQP8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div *ngIf="location" class="m-3">
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/KVpxP3ZZtAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/-V4vEyhWDZ0?start=120" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/M4_8PoRQP8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal for capturing images -->
+
+  <div class="modal fade" id="staticBackdrop6" 
+  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">CAPTURE IMAGE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center"  >
+        
+
+          <div *ngIf="isCameraExist; else noCameraExist">
+            <div style="text-align:center">
+                <div class="btn-group ">
+                    <button class="btn btn-info m-1" (click)="takeSnapshot()">Take a Picture</button>
+                    <button class="btn btn-info m-1" (click)="changeWebCame(true)">Toggle Camera</button>
+                    <button class="btn btn-info m-1" (click)="onOffWebCame()">Switch to camera</button>
+                </div> <br />
+                <webcam [height]="400" [width]="400" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+                    *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
+            </div>
+        
+            <div *ngIf="errors.length > 0">
+                <h4>Error Messages:</h4>
+                <ul *ngFor="let error of errors">
+                    <li>{{ error | json }}</li>
+                </ul>
+            </div>
+        </div>
+        
+        <ng-template #noCameraExist>
+            Camera device not available
+        </ng-template>
+          
+        <div class="webcam-image" *ngIf="webcamImage">
+          <h4>Your Captured Images: </h4>
+          <div *ngFor="let item of images">
+          <img [src]="item._imageAsDataUrl" height="300px" width="300px" />
+        </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" 
+          data-bs-dismiss="modal"
+          (click)= "closecamera()"
+          >Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>

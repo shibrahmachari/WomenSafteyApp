@@ -1,0 +1,81 @@
+
+<!-- The page to register if not already -->
+
+<h1 class="text-center">Register</h1>
+
+<form   (ngSubmit)="onSubmit(form)" #form="ngForm" >
+        <div class="col-xs-3 container" style="max-width:500px">
+            
+            <div class="username">
+              <p>NAME:</p>
+              <input type="text"  class="form-control"
+               ngModel name="username" required  #name= "ngModel">
+              <p *ngIf="!name.valid && name.touched"
+              class="alert alert-danger">
+              Name is required </p>
+             </div>
+
+             <div class="useremail">
+              <p>EMAIL:</p> 
+              <input type="email"  class="form-control" 
+              ngModel name="email" required email
+              #email="ngModel"
+              >
+              <p *ngIf="!email.valid &&  email.touched"
+              class="alert alert-danger">
+             Email is required </p>
+                </div>
+
+        
+              <p>PASSWORD:</p> 
+              <input type="password"  class="form-control"
+               ngModel name="password" required #password="ngModel"
+              minlength="6" maxlength="6"
+              >
+              <p *ngIf="!password.valid && password.touched"
+              class="alert alert-danger" >
+             password is required </p>  
+              <p>MOBILE NUMBER</p>
+              <input type="tel" class="form-control" ngModel name="mobilenumber" required #phone="ngModel"
+               (input)="onUpdate($event)"
+                minlength="10" maxlength="10" >
+              <p *ngIf="!phoneStatus && phone.touched"  class="alert alert-danger"> Please Enter a 10 digit Number</p>
+               
+              <p>MOBILE NUMBER</p>
+              <input type="tel" class="form-control" ngModel name="mobilenumber1" required #phone="ngModel"
+               (input)="onUpdate($event)"
+                minlength="10" maxlength="10" >
+              <p *ngIf="!phoneStatus && phone.touched"  class="alert alert-danger"> Please Enter a 10 digit Number</p>
+               
+              <p>Contact NUMBER 1</p>
+              <input type="tel" class="form-control" ngModel name="mobilenumber2" required #phone="ngModel"
+               (input)="onUpdate($event)"
+                minlength="10" maxlength="10" >
+              <p *ngIf="!phoneStatus && phone.touched"  class="alert alert-danger"> Please Enter a 10 digit Number</p>
+               
+              <p>Contact NUMBER2</p>
+              <input type="tel" class="form-control" ngModel name="mobilenumber3" required #phone="ngModel"
+               (input)="onUpdate($event)"
+                minlength="10" maxlength="10" >
+              <p *ngIf="!phoneStatus && phone.touched"  class="alert alert-danger"> Please Enter a 10 digit Number</p>
+               
+              <p>Contact NUMBER3</p>
+              <input type="tel" class="form-control" ngModel name="mobilenumber4" required #phone="ngModel"
+               (input)="onUpdate($event)"
+                minlength="10" maxlength="10" >
+              <p *ngIf="!phoneStatus && phone.touched"  class="alert alert-danger"> Please Enter a 10 digit Number</p>
+               
+              <p>Contact NUMBER4</p>
+              <input type="tel" class="form-control" ngModel name="mobilenumber5" required #phone="ngModel"
+               (input)="onUpdate($event)"
+                minlength="10" maxlength="10" >
+              <p *ngIf="!phoneStatus && phone.touched"  class="alert alert-danger"> Please Enter a 10 digit Number</p>
+               
+              
+              
+              <br>
+        <button class="btn btn-primary m-4" type="submit" [disabled]="!form.valid || !form.touched">
+    Register</button> 
+        </div>
+</form>
+
